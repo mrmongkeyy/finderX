@@ -1,0 +1,111 @@
+body{
+	margin:0;	
+	background:white;
+	font-family:calibri;
+}
+heading{
+	background:#2e3440;
+	width:50%;
+	margin:auto;
+	height:10%;
+	display:block;	
+	color:white;
+}
+.container{
+	display:flex;
+	justify-content:center;	
+	align-items:center;
+	height:100%;
+	padding:0 10px 0 10px;
+	font-size:20px;
+	font-family:calibri;
+	font-weight:bold;
+}
+nav span{
+	padding:10px;
+	background:orange;
+	color:white;	
+	cursor:pointer;
+}
+nav span:hover{
+	background:#00ccff;
+	color:white;	
+}
+heading .container div{
+	width:50%;	
+}
+.alignRight{
+	text-align:right;
+}
+main{
+	margin:auto;
+	width:50%;
+	background:#d8dee9;	
+	height:90%;
+}
+
+.bound{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background:	RGB(59, 66, 82,0.3)
+}
+.boundcard{
+	position:absolute;
+	top:0;
+	left:25%;
+	width:46%;
+	background:white;
+	padding:2%;
+	border-radius:0 0 15px 15px;
+	max-height:70%;
+	overflow:auto;
+}
+.boundcard div{
+	text-align:center;
+	padding:10px;
+	font-size:20px;
+	cursor:pointer;	
+}
+.boundcard div span{
+	width:90%;
+	float:left;
+	padding:4%;	
+	margin:1%;
+}
+#close{
+	background:yellow;
+	color:black;	
+}
+.boundcard div span:hover{
+	background:lightgray;
+	color:white;	
+}
+.nameIndicator{
+	position:absolute;
+	background:black;
+	color:white;
+	font-weight:bold;
+	font-size:20px;
+	padding:5px;
+	max-width:200px;
+	text-align:center;
+}
+#Listing{
+	max-height:50%;
+	overflow:auto;	
+}
+@media screen and (max-width:900px){
+	heading{
+		width:100%;	
+	}	
+	main{
+		width:100%;	
+	}
+	.boundcard{
+		left:10%;
+		width:76%;
+	}
+}
