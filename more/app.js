@@ -166,22 +166,22 @@ const app = {
 			this.ctx.stroke();
 		});
 		const UarrowImg = new Image();
-		UarrowImg.src = '/media/top-arrow.png';
+		UarrowImg.src = '/media?fn=top-arrow.png';
 		UarrowImg.onload = function(){
 			app.ctx.drawImage(this,180-34/2,520-34/2,34,34);
 		}
 		const LarrowImg = new Image();
-		LarrowImg.src = '/media/left-arrow.png';
+		LarrowImg.src = '/media?fn=left-arrow.png';
 		LarrowImg.onload = function(){
 			app.ctx.drawImage(this,335-34/2,285-34/2,34,34);
 		}
 		const RarrowImg = new Image();
-		RarrowImg.src = '/media/right-arrow.png';
+		RarrowImg.src = '/media?fn=right-arrow.png';
 		RarrowImg.onload = function(){
 			app.ctx.drawImage(this,data.arrowPos.x-34/2,data.arrowPos.y-34/2,34,34);
 		}
 		const placeHolder = new Image();
-		placeHolder.src = '/media/placeholder.png';
+		placeHolder.src = '/media?fn=placeholder.png';
 		placeHolder.onload = function(){
 			app.ctx.drawImage(this,data.placeHolderPos.x-34/2,data.placeHolderPos.y-34/2,34,34);
 			if(help.get(document,'.nameIndicator'))help.get(document,'.nameIndicator').remove();
@@ -240,7 +240,7 @@ app.init({
 		//code here.
 		
 		const image = new Image();
-		image.src = '/media/map.jpg';
+		image.src = '/media?fn=map.jpg';
 		image.onload = function(){
 			obj.ctx.drawImage(this,0,0,obj.canvas.width,obj.canvas.height);
 			//obj.render(data.elizaRatna);
