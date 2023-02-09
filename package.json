@@ -1,0 +1,26 @@
+{
+  "name": "finderX",
+  "version": "1.0.0",
+  "description": "Cool app that help student to find out theacher rooms",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"node app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrmongkeyy/finderx.git"
+  },
+  "keywords": [
+    "mrmongkeyy"
+  ],
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "author": "mrmongkeyy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mrmongkeyy/finderx/issues"
+  },
+  "homepage": "https://github.com/mrmongkeyy/finderx#readme"
+}
