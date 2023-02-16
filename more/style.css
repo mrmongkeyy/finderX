@@ -1,51 +1,26 @@
-body{
-	margin:0;	
-	background:white;
-	font-family:calibri;
-}
-heading{
-	background:#2e3440;
-	width:50%;
-	margin:auto;
-	height:10%;
-	display:block;	
-	color:white;
-}
-.container{
-	display:flex;
-	justify-content:center;	
-	align-items:center;
-	height:100%;
-	padding:0 10px 0 10px;
-	font-size:20px;
-	font-family:calibri;
-	font-weight:bold;
-}
-nav span{
-	padding:10px;
-	background:orange;
-	color:white;	
-	cursor:pointer;
-}
-nav span:hover{
-	background:#00ccff;
-	color:white;	
-}
-heading .container div{
-	width:50%;	
-}
-.alignRight{
-	text-align:right;
-}
 main{
-	margin:auto;
-	width:50%;
-	background:#d8dee9;	
-	height:90%;
+	width:100%;
+	height:100%;
+	text-align:center;
 }
-
+canvas{
+}
+#nav{
+	position: fixed;
+	padding:10px;
+	background:black;
+	color: white;
+	top:0;
+	border-radius:10px;
+	cursor:pointer;
+	margin-top: 10px;
+}
+#nav img{
+	width: 32px;
+	height: 32px;
+}
 .bound{
-	position:absolute;
+	position:fixed;
 	top:0;
 	left:0;
 	width:100%;
@@ -66,7 +41,6 @@ main{
 .boundcard div{
 	text-align:center;
 	padding:10px;
-	font-size:20px;
 	cursor:pointer;	
 }
 .boundcard div span{
@@ -83,29 +57,20 @@ main{
 	background:lightgray;
 	color:white;	
 }
-.nameIndicator{
-	position:absolute;
-	background:black;
-	color:white;
-	font-weight:bold;
-	font-size:20px;
-	padding:5px;
-	max-width:200px;
-	text-align:center;
-}
+
 #Listing{
-	max-height:50%;
+	max-height:200px;
 	overflow:auto;	
 }
-@media screen and (max-width:1000px){
-	heading{
-		width:100%;	
-	}	
-	main{
-		width:100%;	
-	}
-	.boundcard{
-		left:10%;
-		width:76%;
-	}
+#inputX{
+	padding: 10px;
+	outline: none;
+	border: 2px solid aliceblue;
+}
+@media  screen and (max-width:1000px) {
+		.boundcard{
+			width:100%;
+			left:0;
+			padding:0;
+		}
 }

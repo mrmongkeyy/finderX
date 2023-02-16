@@ -30,6 +30,13 @@ const route = [
 		callback(req,res){
 			res.sendFile(`/more/media/${req.query.fn}`,{root:path.join(__dirname)},function(err){if(err)console.log(err)})
 		}
+	},
+	{
+		methode:'get',
+		address:'/reqDB',
+		callback(req,res){
+			res.sendFile(`/more/db/data.js`,{root:path.join(__dirname)},function(err){if(err)console.log(err)})
+		}
 	}
 ];
 route.forEach((opt)=>{app[opt.methode](opt.address,(req,res)=>{opt.callback(req,res)});})
